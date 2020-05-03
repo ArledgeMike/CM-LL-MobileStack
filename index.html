@@ -1,16 +1,36 @@
 <html lang="en" xmlns:og="http://ogp.me/ns#">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Topiary Wolf | Bespoke Web Solutions</title>
-        <meta name="description" content="Small bespoke web solutions for specific purposes.">
-        <link rel="icon" type="image/x-icon" href="favicon.png" />
-        <link rel="canonical" href="http://topiarywolf.com" />
-        <meta property="og:title" content="Bespoke web apps and solutions." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://topiarywolf.com/" />
-        <meta property="og:image" content="headerImage.png" />
-    </head>
-    <body>
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Topiary Wolf | Bespoke Web Solutions</title>
+		<meta
+			name="description"
+			content="Bespoke web solutions for specific purposes."
+		/>
+		<link rel="icon" type="image/x-icon" href="favicon.png" />
+		<link rel="canonical" href="http://topiarywolf.com/ " />
+		<meta property="og:title" content="Bespoke web apps and solutions." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://topiarywolf.com/" />
+		<meta
+			property="og:image"
+			content="./libs/resources/images/headerImage.png"
+		/>
+		<meta property="og:description" content="Bespoke web apps and solutions." />
+        
+        <!-- bundle this with webpack [vendor]-->
+        <link href="https://codepen.io/MichaelArledge/pen/mXKELw.css" rel="stylesheet" />
+        
+        <!-- bundle this with webpack [vendor]-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+
+        <!-- bundle this with webpack [caretaker]-->
+		<link preload href="./libs/index.css" rel="stylesheet" />
+        
+	</head>
+	<body class="topiary">
+
+        <!-- bundle this with webpack [caretaker]-->
+		<script type="text/javascript" src="./libs/index.js"></script>
+	</body>
 </html>
