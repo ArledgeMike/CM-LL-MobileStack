@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/f0i89r1ensbu/public_html/
-    - /home/f0i89r1ensbu/repositories/LightSoilPot/cp index.html $DEPLOYPATH
-    - /home/f0i89r1ensbu/repositories/LightSoilPot/cp favicon.png $DEPLOYPATH
-    - /home/f0i89r1ensbu/repositories/LightSoilPot/cp libs $DEPLOYPATH
+    - export DEPLOYPATH=../../public_html/
+    - cp ./index.html $DEPLOYPATH
+    - cp ./favicon.png $DEPLOYPATH
+    - cp ./libs/ $DEPLOYPATH
