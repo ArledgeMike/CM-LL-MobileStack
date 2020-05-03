@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/f0i89r1ensbu/public_html/
+    - /home/f0i89r1ensbu/repositories/LightSoilPot index.html $DEPLOYPATH
+    - /home/f0i89r1ensbu/repositories/LightSoilPot favicon.png $DEPLOYPATH
+    - /home/f0i89r1ensbu/repositories/LightSoilPot libs $DEPLOYPATH
