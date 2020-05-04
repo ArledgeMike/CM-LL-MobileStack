@@ -1,0 +1,23 @@
+{
+  "name": "lightsoilpot",
+  "version": "1.0.0",
+  "description": "The basics for growth",
+  "main": "./libs/index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TopiaryCareTaker/LightSoilPot.git"
+  },
+  "author": "Caretaker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TopiaryCareTaker/LightSoilPot/issues"
+  },
+  "homepage": "https://github.com/TopiaryCareTaker/LightSoilPot#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

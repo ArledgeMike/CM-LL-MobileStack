@@ -5,3 +5,4 @@ deployment:
     - cp ./index.html $DEPLOYPATH
     - cp ./favicon.png $DEPLOYPATH
     - cp ./libs/ $DEPLOYPATH
+    - cp ./dist/ $DEPLOYPATH
