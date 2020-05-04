@@ -33,3 +33,4 @@ jobs:
     - run: git add .
     - run: git commit -m "XXX | task build"
     - run: git push
+    - run: echo "finished"
