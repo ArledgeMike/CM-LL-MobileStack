@@ -6,3 +6,4 @@ deployment:
     - cp ./favicon.png $DEPLOYPATH
     - cp ./libs/ $DEPLOYPATH
     - cp ./dist/ $DEPLOYPATH
+    - npm run talk
