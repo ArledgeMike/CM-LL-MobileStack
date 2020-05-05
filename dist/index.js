@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ \"./libs/index.scss\");\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconsole.log('build it');\n\n//# sourceURL=webpack:///./libs/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ \"./libs/index.scss\");\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _resources_images_headerImage_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resources/images/headerImage.png */ \"./libs/resources/images/headerImage.png\");\n\n\n\nconsole.log('build it');\n\n//# sourceURL=webpack:///./libs/index.js?");
 
 /***/ }),
 
@@ -106,6 +106,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ind
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./libs/index.scss?");
+
+/***/ }),
+
+/***/ "./libs/resources/images/headerImage.png":
+/*!***********************************************!*\
+  !*** ./libs/resources/images/headerImage.png ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/headerImage.png\");\n\n//# sourceURL=webpack:///./libs/resources/images/headerImage.png?");
 
 /***/ })
 
