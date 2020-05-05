@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ \"./libs/index.scss\");\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _resources_images_headerImage_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resources/images/headerImage.png */ \"./libs/resources/images/headerImage.png\");\n\n\n\nconsole.log('build it');\n\n//# sourceURL=webpack:///./libs/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ \"./libs/index.scss\");\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _resources_images_headerImage_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resources/images/headerImage.png */ \"./libs/resources/images/headerImage.png\");\n/* harmony import */ var _resources_images_headerImage_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_resources_images_headerImage_png__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nconsole.log('build it');\n\n//# sourceURL=webpack:///./libs/index.js?");
 
 /***/ }),
 
@@ -103,9 +103,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ind
   !*** ./libs/index.scss ***!
   \*************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./libs/index.scss?");
+eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleBuildError: Module build failed: Error: ENOENT: no such file or directory, open '/Users/micarled/Sites/LightSoilPot/node_modules/css-loader/dist/runtime/api.js'\\n    at runLoaders (/Users/micarled/Sites/LightSoilPot/node_modules/webpack/lib/NormalModule.js:316:20)\\n    at /Users/micarled/Sites/LightSoilPot/node_modules/loader-runner/lib/LoaderRunner.js:367:11\\n    at Array.<anonymous> (/Users/micarled/Sites/LightSoilPot/node_modules/loader-runner/lib/LoaderRunner.js:203:19)\\n    at Storage.finished (/Users/micarled/Sites/LightSoilPot/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:55:16)\\n    at ReadFileContext.provider (/Users/micarled/Sites/LightSoilPot/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:91:9)\\n    at ReadFileContext.callback (/Users/micarled/Sites/LightSoilPot/node_modules/graceful-fs/graceful-fs.js:123:16)\\n    at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:237:13)\");\n\n//# sourceURL=webpack:///./libs/index.scss?");
 
 /***/ }),
 
@@ -113,11 +113,10 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./libs
 /*!***********************************************!*\
   !*** ./libs/resources/images/headerImage.png ***!
   \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/headerImage.png\");\n\n//# sourceURL=webpack:///./libs/resources/images/headerImage.png?");
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack:///./libs/resources/images/headerImage.png?");
 
 /***/ })
 
