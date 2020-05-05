@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.topiary {
+  max-width: var(--break2);
+  margin: auto; }
+
+span {
+  padding: 16px;
+  line-height: 75px;
+  overflow: scroll;
+  text-align: center;
+  font-size: 46px;
+  color: var(--green-dark);
+  word-spacing: -9px;
+  text-shadow: 0 0 var(--green-light), 1px 1px 1px var(--green-light), 2px 2px 1px var(--green-light), 3px 3px 1px var(--green-light), 4px 4px 1px var(--green-light), 5px 5px 1px var(--green-light); }
+
+small {
+  margin-top: 32px;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  text-shadow: none;
+  word-spacing: -10px;
+  color: var(--green-light); }
+

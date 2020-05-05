@@ -5,7 +5,8 @@
   "main": "./libs/index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack --watch"
+    "dev": "webpack --watch",
+    "talk" : "echo >> this"
   },
   "repository": {
     "type": "git",
