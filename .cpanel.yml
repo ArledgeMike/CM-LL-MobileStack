@@ -4,6 +4,6 @@ deployment:
     - export DEPLOYPATH=../../public_html/
     - cp ./index.html $DEPLOYPATH
     - cp ./favicon.png $DEPLOYPATH
-    - cp ./libs/ $DEPLOYPATH
-    - cp ./dist/ $DEPLOYPATH
+    - cp ./libs $DEPLOYPATH
+    - cp ./dist $DEPLOYPATH
     - npm run talk
