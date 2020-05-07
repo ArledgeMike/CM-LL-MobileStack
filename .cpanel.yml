@@ -2,7 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=../../public_html/
-    - cp ./index.html $DEPLOYPATH
-    - cp ./favicon.png $DEPLOYPATH
-    - cp -avr ./dist/ $DEPLOYPATH
-    - npm run talk
+    - cp -r ./dist/ $DEPLOYPATH
