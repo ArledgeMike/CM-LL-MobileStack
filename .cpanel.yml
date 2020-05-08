@@ -2,5 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=../../public_html/
-    - npm run deploy
     - cp -rf ./dist/ $DEPLOYPATH
