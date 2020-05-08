@@ -1,32 +1,52 @@
-body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+@import "topiary-tools/scss/index.scss";
+
+@function setLongShadow($color, $length) {
+	$value: 0 0 $color;
+	@for $i from 1 through $length {
+		$value: #{$value}, #{$i}px #{$i}px 1px #{$color};
+	}
+	@return $value;
 }
 
+@mixin longShadow($color, $length: 200) {
+	text-shadow: setLongShadow($color, $length);
+}
+
+body {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+}
 .topiary {
 	max-width: var(--break2);
 	margin: auto;
 }
-
-span {
-	padding: 16px;
-	line-height: 75px;
+.light {
+	padding: $base-unit * 2;
+	padding-top: 0px;
+	line-height: 70px;
 	overflow: scroll;
 	text-align: center;
-	font-size: 46px;
+	font-size: 34px;
+	width: 100%;
 	color: var(--green-dark);
 	word-spacing: -9px;
-	text-shadow: 0 0 var(--green-light), 1px 1px 1px var(--green-light),
-		2px 2px 1px var(--green-light), 3px 3px 1px var(--green-light),
-		4px 4px 1px var(--green-light), 5px 5px 1px var(--green-light);
+	@include longShadow($green-light, 6);
 }
-small {
-	margin-top: 32px;
+.pot {
+	margin-top: $base-unit * 3;
 	font-size: 14px;
 	text-align: center;
 	display: block;
 	text-shadow: none;
-	word-spacing: -10px;
+	word-spacing: -2px;
 	color: var(--green-light);
+}
+.soil {
+	width: 100%;
+	text-align: center;
+	display: block;
+	color: var(--green-light);
+	font-size: 12px;
 }
