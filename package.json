@@ -1,22 +1,13 @@
 {
-  "name": "lightsoilpot",
-  "version": "1.0.1",
-  "description": "The basics for growth",
+  "name": "gardenbed",
+  "version": "1.0.0",
+  "description": "The basics for creating small front end focused web apps.",
   "main": "./src/index.js",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --content-base dist --hot --mode development --open --host 0.0.0.0",
     "deploy": "webpack --mode production"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TopiaryCareTaker/LightSoilPot.git"
-  },
-  "author": "Caretaker",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TopiaryCareTaker/LightSoilPot/issues"
-  },
-  "homepage": "https://github.com/TopiaryCareTaker/LightSoilPot#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.6",
     "css-loader": "^3.5.3",
@@ -33,7 +24,6 @@
   "dependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
-    "babel-loader": "^8.1.0",
-    "topiary-tools": "^1.0.1"
+    "babel-loader": "^8.1.0"
   }
 }
