@@ -1,5 +1,5 @@
 function tellIt(msg){
-    console.log(msg);
+    window.alert(msg);
 }
 
 export default tellIt;
