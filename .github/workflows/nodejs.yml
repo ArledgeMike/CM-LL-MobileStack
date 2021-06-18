@@ -14,5 +14,10 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 12
-      - run: npm install
-      - run: npm run deploy
+      - run: rm -rf dist/
+      - run: npm ci
+      - run: npm run deploy --if-present
+      - run: git add -A
+      - run: git diff-index --quiet HEAD || git commit -m "XXX | task build"
+      - run: git push
+      - run: echo "finished"
