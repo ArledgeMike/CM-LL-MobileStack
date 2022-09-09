@@ -1,5 +1,4 @@
-function tellIt(msg){
-    window.alert(msg);
-}
+const someDumbShit = () => {
+};
 
-export default tellIt;
+someDumbShit();

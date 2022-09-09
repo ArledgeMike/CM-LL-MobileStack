@@ -1,25 +1,28 @@
-const path = require("path");
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require('path');
+const ESLintPlugin = require('eslint-webpack-plugin');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-	entry: ["./src/index.js"],
+	entry: ['./src/index.js'],
 	output: {
-		filename: "index.js",
-		path: path.resolve(__dirname, "./dist"),
+		filename: 'index.js',
+		path: path.resolve(__dirname, './dist'),
 	},
 	plugins: [
+		new ESLintPlugin(),
 		new MiniCssExtractPlugin({
-			filename: "index.css",
-			chunkFilename: "index.css",
+			filename: 'index.css',
+			chunkFilename: 'index.css',
 		}),
 		new HtmlWebPackPlugin({
-			template: "./src/index.html",
-			filename: "./index.html",
+			template: './src/index.html',
+			filename: './index.html',
 		}),
 	],
 	devServer: {
     https: true,
+	static: path.join(__dirname, 'dist'),
   },
 	module: {
 		rules: [
@@ -27,30 +30,26 @@ module.exports = {
 				test: /\.js$/,
 				exclude: /node_modules/,
 				use: {
-					loader: "babel-loader",
+					loader: 'babel-loader',
 				},
 			},
 			{
 				test: /\.s[ac]ss$/i,
 				use: [
 					{
-						loader: MiniCssExtractPlugin.loader,
-						options: {
-							hmr: process.env.NODE_ENV === "development",
-							reloadAll: true,
-						},
+						loader: MiniCssExtractPlugin.loader
 					},
-					"css-loader",
-					"postcss-loader",
-					"sass-loader",
+					'css-loader',
+					'postcss-loader',
+					'sass-loader',
 				],
 			},
 			{
 				test: /\.(png|jpe?g|gif|svg|mp4|mov|mp3)$/i,
-				loader: "file-loader",
+				loader: 'file-loader',
 				options: {
-					name: "[name].[ext]",
-					outputPath: "./images",
+					name: '[name].[ext]',
+					outputPath: './images',
 				},
 			},
 		],
