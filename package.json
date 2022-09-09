@@ -4,7 +4,7 @@
   "description": "The basics for creating small front end focused web apps.",
   "main": "./src/index.js",
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server --content-base dist --hot --mode development --open --host 0.0.0.0",
+    "dev": "NODE_ENV=development NODE_OPTIONS=openssl-legacy-provider webpack-dev-server --content-base dist --hot --mode development --open --host 0.0.0.0",
     "deploy": "webpack --mode production"
   },
   "license": "ISC",
