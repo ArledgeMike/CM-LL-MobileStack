@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "dev": "NODE_ENV=development NODE_OPTIONS=openssl-legacy-provider webpack-dev-server --hot --mode development --open --host 0.0.0.0",
-    "deploy": "webpack --mode production"
+    "deploy": "webpack --mode production --config prod.webpack.config.js"
   },
   "license": "ISC",
   "devDependencies": {
