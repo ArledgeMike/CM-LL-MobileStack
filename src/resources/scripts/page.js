@@ -1,4 +1,0 @@
-const someDumbShit = () => {
-};
-
-someDumbShit();
