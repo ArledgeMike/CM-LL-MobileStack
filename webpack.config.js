@@ -4,6 +4,8 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const SassLintPlugin = require('sass-lint-webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const HtmlWebPackPluginConfig = require('./htmlWebpack.config');
+
 module.exports = {
 	entry: ['./src/index.js'],
 	output: {
@@ -17,15 +19,16 @@ module.exports = {
 			filename: 'index.css',
 			chunkFilename: 'index.css',
 		}),
-		new HtmlWebPackPlugin({
-			template: './src/index.html',
-			filename: './index.html',
-		}),
+		new HtmlWebPackPlugin(HtmlWebPackPluginConfig),
 	],
 	devServer: {
-    https: true,
-	static: path.join(__dirname, 'dist'),
-  },
+		https: true,
+		static: path.join(__dirname, 'dist'),
+		client: {
+			overlay: false,
+			logging: 'none'
+		}
+	},
 	module: {
 		rules: [
 			{

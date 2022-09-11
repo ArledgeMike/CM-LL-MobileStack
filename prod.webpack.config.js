@@ -2,6 +2,8 @@ const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const HtmlWebPackPluginConfig = require('./htmlWebpack.config');
+
 module.exports = {
 	entry: ['./src/index.js'],
 	output: {
@@ -13,15 +15,8 @@ module.exports = {
 			filename: 'index.css',
 			chunkFilename: 'index.css',
 		}),
-		new HtmlWebPackPlugin({
-			template: './src/index.html',
-			filename: './index.html',
-		}),
+		new HtmlWebPackPlugin(HtmlWebPackPluginConfig),
 	],
-	devServer: {
-    https: true,
-	static: path.join(__dirname, 'dist'),
-  },
 	module: {
 		rules: [
 			{
