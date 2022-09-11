@@ -1,0 +1,1 @@
+(()=>{"use strict";var e=document.createElement("h2");e.innerText="<~*! Garden Bed !*~>",document.body.appendChild(e)})();
