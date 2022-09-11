@@ -1,47 +1,25 @@
-Garden Bed
+# Garden Bed
 
--REPO
+### REPO
 https://github.com/TopiaryCareTaker/gardenbed.git
 
-Simple front end focused web app development stack.
+Simple front end focused web development stack.
 
-Install all dependencies
+**Configure Html Template**
+- htmlWebpack.config.js
 
--npm install
-
-Run Webpack Dev Server
+**Run Webpack Dev Server**
 
 - npm run dev
 
-Output Topiary (index.html, css file, js file)
+**Output Topiary**
 
-- npm run deploy
+- npm run deploy (index.html, css file, js file)
 
+**Github Actions**
 
-If you would like to include a simple style and component library:
+- .github/workflow/nodejs.yml
 
-- npm install gardentools
+**Pipeline deploy**
 
--REPO for Garden Tools
-https://www.github.com/TopiaryCareTaker/gardentools.git
-
-
--Github actions
-
-.github/workflow/nodejs.yml
-On push to your repo github actions will run the deploy command create a fresh build of the topiary.
-
-
--Godaddy Pipeline deploy
-
-.cpaney.yml
-Garden bed can be connected to Godaddy repo deploy throught their cpanel. Configure this for deployemnt. The DIST folder that was built in the github actions will be deployed through the cpanel.
-
-
-
-
-
-
-
-
-
+- .cpaney.yml
