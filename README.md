@@ -1,7 +1,4 @@
-# Garden Bed
-
-### REPO
-https://github.com/TopiaryCareTaker/gardenbed.git
+# Raised Garden Bed
 
 Simple front end focused web development stack.
 
