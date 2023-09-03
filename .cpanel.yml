@@ -1,5 +1,5 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=../../public_html/[ADD WEBSITE FOLDER HERE]
-    - cp -r ./dist/ $DEPLOYPATH
+# ---
+# deployment:
+#   tasks:
+#     - export DEPLOYPATH=../../public_html/[ADD WEBSITE FOLDER HERE]
+#     - cp -r ./dist/ $DEPLOYPATH
